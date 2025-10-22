@@ -5,10 +5,10 @@ import './App.css'
 // propr é um OBJETO
 // props.children
 
-function TituloFormulario(props) {
+function TituloFormulario(children) {
   return (
     <h2>
-      {props.children}
+      {children}
     </h2>
   )
 }
@@ -21,13 +21,16 @@ function CampoDeFormulario({ children }) {
   )
 }
 
-//function Label({ children, htmlFor }) {
-function Label(props)  {
+function Label({ children, htmlFor }) {
   return (
     <label htmlFor={htmlFor}>
       {children}
     </label>
   )
+}
+
+function CampoDeEntrada(props) {
+  return <input {...props} />
 }
 
 function FormularioDeEventos() {
@@ -42,7 +45,10 @@ function FormularioDeEventos() {
             <Label htmlFor="nome">
               Qual o nome do evento?
             </Label>
-            <input type="text" id='nome' placeholder='Summer dev hits' />
+            <CampoDeEntrada 
+            type="text" 
+            id='nome' 
+            placeholder='Summer dev hits' />
       </CampoDeFormulario>
     </form>
     
