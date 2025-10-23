@@ -5,10 +5,10 @@ import './App.css'
 // propr é um OBJETO
 // props.children
 
-function TituloFormulario(children) {
+function TituloFormulario(props) {
   return (
     <h2>
-      {children}
+      {props.children}
     </h2>
   )
 }
