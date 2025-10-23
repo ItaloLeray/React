@@ -1,0 +1,15 @@
+.campo-entrada-form {
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #4a4949;
+    font-family: Work Sans;
+    font-weight: 400px;
+    font-weight: 16px;
+    list-style: 120%;
+    color: white;
+    padding: 8px 16px ;
+}
+
+.campo-entrada-form::placeholder {
+    color: #4a4949;
+}

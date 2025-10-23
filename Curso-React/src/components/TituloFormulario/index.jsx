@@ -1,12 +1,13 @@
+import './titulo-formulario.estilos.css'
+
 // no react, componentes são FUNÇÕES
 
 // propr é um OBJETO
 // props.children
-
-export function TituloFormulario(props) {
+export function TituloFormulario({children}) {
   return (
-    <h2>
-      {props.children}
+    <h2 className='titulo-form'>
+      {children}
     </h2>
   )
 }
