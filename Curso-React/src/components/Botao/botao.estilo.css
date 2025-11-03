@@ -1,0 +1,10 @@
+.botao {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #17E4B9;
+    font-size: 15px;
+    font-weight: bolder;
+    border: transparent;
+    margin: auto;
+}

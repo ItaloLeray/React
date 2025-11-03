@@ -2,7 +2,7 @@ import './titulo-formulario.estilos.css'
 
 // no react, componentes são FUNÇÕES
 
-// propr é um OBJETO
+// props é um OBJETO
 // props.children
 export function TituloFormulario({children}) {
   return (
